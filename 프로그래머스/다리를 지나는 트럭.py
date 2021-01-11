@@ -14,8 +14,6 @@ def solution(bridge_length,weight,truck_weights):
 
     return answer
 
-
-
 truck_weights = [7,4,5,6]
 bridge_length = 2
 weight = 10
