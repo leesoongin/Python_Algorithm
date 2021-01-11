@@ -46,6 +46,7 @@ def div(yaksuList):
 
     return divList
 
-# print(div(yaksu(36)))
+print(yaksu(36))
+print(div(yaksu(36)))
 
 print(solution(8,1))

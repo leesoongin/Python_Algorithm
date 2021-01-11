@@ -1,23 +1,30 @@
+from collections import deque
 
 def solution(progresses, speeds):
     answer = []
-    result=[0 for _ in range(len(progresses))]
-
-    while result:
+    resultList = deque(progresses)
+    speeds = deque(speeds)
+    while resultList:
         count=0
-        for index,value in enumerate(zip(progresses,speeds)):
-            result[index]+=value[0]+value[1]
-        for i in result:
-            if i >=100:
+        for i in range(len(resultList)):
+            resultList[i]+=speeds[i]
+        print(resultList)
+        for i in range(len(resultList)):
+            if resultList[i] >= 100:
                 count+=1
-                progresses.pop(0); speeds.pop(0); result.pop(0)
+            else:
+                break
 
-        if count != 0:
+        for i in range(count):
+            resultList.popleft()
+            speeds.popleft()
+
+        if count > 0:
             answer.append(count)
 
     return answer
 
-progresses = [93, 30, 55]
-speeds = [1, 30, 5]
+progresses = [95, 90, 99, 99, 80, 99]
+speeds = [1, 1, 1, 1, 1, 1]
 
 print(solution(progresses,speeds))
