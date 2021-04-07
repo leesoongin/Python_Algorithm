@@ -22,7 +22,7 @@ def solution(progresses, speeds):
 
 solution([93, 30, 55],[1, 30, 5])
 
-# 다른사람풀이 time이라는 변수를 이용해 시간이 변화할때마다의
+# 다른사람풀이 time이라는 변수를 이용해 시간이 변화할때마다의 값을 이용할수있게했네 개똑똑한듯;
 
 def solution(progresses, speeds):
     print(progresses)
