@@ -8,7 +8,6 @@ def solution(progresses, speeds):
         count=0
         for i in range(len(resultList)):
             resultList[i]+=speeds[i]
-        print(resultList)
         for i in range(len(resultList)):
             if resultList[i] >= 100:
                 count+=1
