@@ -1,5 +1,3 @@
-from itertools import combinations
-
 def solution(nums):
     numSet = set(nums)
 
