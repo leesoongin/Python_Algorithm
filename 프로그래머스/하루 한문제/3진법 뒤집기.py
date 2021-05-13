@@ -1,3 +1,4 @@
+# 첫번째 풀이,
 def solution(n):
     answer = 0
     sam = list()
@@ -10,6 +11,7 @@ def solution(n):
 
     return answer
 
+# n진법 -> 10진법으로 바꾸는데에 int('0021',n진법) 으로 가능
 def solution2(n):
     sam = list()
 
