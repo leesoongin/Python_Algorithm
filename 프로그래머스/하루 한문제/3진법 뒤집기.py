@@ -19,7 +19,6 @@ def solution2(n):
         n,mod = divmod(n,3)
         sam.append(str(mod))
     answer = int(''.join(sam),3)
-
     return answer
 
 print(solution(45))
