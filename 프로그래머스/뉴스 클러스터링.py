@@ -37,45 +37,7 @@ def solution(str1,str2):
         return 0
     else:
         return int((ggoset / hapset) * 65536)
-# 일단 특수문 제거, 대소문자 통일부터하고 시작하자
 
-
-# print(solution("FRANCE","french"))
-# print(solution("handshake","shake hands"))
-# print(solution("aa1+aa2","AAAA12"))
 print(solution("E=M*C^2","e=m*c^2"))
-# print(solution("aaabbbb", "aaaabbb"))
-# print(solution('abcccc','cccdefff'))
-# print(solution('cccdefff','abcccc'))
-# print(solution("ABDDD", "DDEFGHH"))
-# print(solution("AACCC", "A A A A A C C C C"))
-# print(solution("",""))
-# print(solution("AAbbaa_AA"," BBB"))
-# print(solution("CCDEFGHH", "ABCCC"))
-# print(solution("FRANCE", "french"))
-# print(solution("handshake", "shake hands"))
-# print(solution("aa1+aa2", "AAAA12"))
-# print(solution("E=MC2", "e=mc2"))
-# 16384
-# 65536
-# 43690
-# 65536
-# 46811
-# 13107
-# 13107
-# 7281
-# 0
-# 9362
-# 6553
-# 16384
-# 65536
-# 43690
-# 65536
-
-# str1	str2	answer
-# FRANCE	french	16384
-# handshake	shake hands	65536
-# aa1+aa2	AAAA12	43690
-# E=M*C^2	e=m*c^2	65536
 
 
