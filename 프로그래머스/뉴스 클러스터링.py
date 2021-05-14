@@ -1,6 +1,16 @@
 import re
 from collections import Counter
 
+def solution2(str1,str2):
+    s1 = [str1[i:i+2].lower() for i in range(len(str1)-1) if str1[i].isalpha() and str1[i+1].isalpha()]
+    s2 = [str2[i:i+2].lower() for i in range(len(str2)-1) if str2[i].isalpha() and str2[i+1].isalpha()]
+    c1 = Counter(s1)
+    c2 = Counter(s2)
+
+    return 65536 if not c1 and not c2 else int(sum((c1 & c2).values())/sum((c1 | c2).values()) * 65536)
+
+
+
 def solution(str1,str2):
     # 문자열에서 필요한 놈들만 추출하
     str1List = re.findall('[a-zA-Z]+',str1); str2List = re.findall('[a-zA-Z]+', str2)
@@ -38,6 +48,8 @@ def solution(str1,str2):
     else:
         return int((ggoset / hapset) * 65536)
 
-print(solution("E=M*C^2","e=m*c^2"))
-
-
+# print(solution("E=M*C^2","e=m*c^2"))
+print(solution2("E=M*C^2","e=m*c^2"))
+print(solution2("handshake","shake hands"))
+print(solution2("FRANCE","french"))
+# handshake	shake hands	65536
