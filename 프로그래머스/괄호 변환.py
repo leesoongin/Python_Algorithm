@@ -17,7 +17,7 @@ def solution(p):
             u = p[:i+1]
             v = p[i+1:]
             break
-    return u+solution(v) if allbarn(u) else '(' + solution(v) + ')' + sliceAndReverse(u)
+    return u+solution(v) if allbarn(u) else '(' + solution(v) + ')' + ''.join([')' if i == '(' else '(' for i in u[1:-1]])
 
 def allbarn(str1):
     stack = [str1[0]]
@@ -26,14 +26,16 @@ def allbarn(str1):
 
     return True if len(stack) == 0 else False
 
-def sliceAndReverse(s1):
-    s1 = list(s1[1:-1])
-    for i in range(len(s1)):
-        if s1[i] == ')':
-            s1[i] = '('
-        else:
-            s1[i] = ')'
-    return ''.join(s1)
+
+
+# def sliceAndReverse(s1):
+#     s1 = list(s1[1:-1])
+#     for i in range(len(s1)):
+#         if s1[i] == ')':
+#             s1[i] = '('
+#         else:
+#             s1[i] = ')'
+#     return ''.join(s1)
 
 # u가 올바른 문자열이라면 answer ++
 # 아니라면 그 녀석을 데리고 가서 다시하
