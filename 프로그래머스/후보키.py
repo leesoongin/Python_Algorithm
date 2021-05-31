@@ -13,7 +13,7 @@ def solution(relation):
     # 튜플이 elation의 row개 만큼 나와야함 더 적다면 중복되는게 속성의 값들 중 중복되는 값이 존재한다는 의미
     unique = []
     for candi in candidate:
-        tmp = [tuple([item[i] for i in candi]) for item in relation]
+        tmp = [tuple(item[i] for i in candi) for item in relation]
         if len(set(tmp)) == row:
             unique.append(candi)
     # 최소성 조건 이미 후보키를 만족하는 키를 포함하는 키가 존재할 경우, 최소한의 속성을 가진 튜플을 포함하는 튜플을 제거
