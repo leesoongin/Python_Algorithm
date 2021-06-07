@@ -14,9 +14,7 @@ def solution(p):
         return ''
     for i in range(len(p)):
          if p[:i+1].count('(') == p[:i+1].count(')'):
-            u = p[:i+1]
-            v = p[i+1:]
-            break
+            u = p[:i+1]; v = p[i+1:]; break
     return u+solution(v) if allbarn(u) else '(' + solution(v) + ')' + ''.join([')' if i == '(' else '(' for i in u[1:-1]])
 
 def allbarn(str1):
