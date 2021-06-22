@@ -1,3 +1,47 @@
+def solution2(numbers, hand):
+    answer = ""
+    currentL = '*'
+    currentR = '#'
+
+    for number in numbers:
+        if number == 1 or number == 4 or number == 7:
+            currentL = str(number)
+            answer += 'L'
+        elif number == 3 or number == 6 or number == 9:
+            currentR = str(number)
+            answer += 'R'
+        else:
+            if distance(number,currentL) > distance(number,currentR):
+                currentR = str(number)
+                answer += 'R'
+            elif distance(number,currentL) < distance(number,currentR):
+                currentL = str(number)
+                answer += 'L'
+            elif distance(number,currentL) == distance(number,currentR):
+                if hand == 'left':
+                    currentL = str(number)
+                    answer += 'L'
+                else :
+                    currentR = str(number)
+                    answer += 'R'
+    return answer
+
+def distance(number,hand):
+    pad = {"1":(0,0),"2":(0,1),"3":(0,2),"4":(1,0),"5":(1,1),"6":(1,2),"7":(2,0),"8":(2,1),"9":(2,2),"*":(3,0),"0":(3,1),"#":(3,2)}
+    target = pad[str(number)]
+    hand = pad[hand]
+    return abs(target[0] - hand[0]) + abs(target[1] - hand[1])
+
+# 147 -> 왼손 /  369 -> 오른손 / 2580 ->  왼손오른손 가까운거 만약 거리가 같다면 주 손잡
+
+# 거리 구하기
+
+print(solution2([1, 3, 4, 5, 8, 2, 1, 4, 5, 9, 5],"right"))
+print(solution2([7, 0, 8, 2, 8, 3, 1, 5, 7, 6, 2],"left"))
+
+
+
+
 def solution(numbers, hand):
     answer = ''
     leftHand = '*'
@@ -32,7 +76,7 @@ def findPoint(arr,target):
 def distanceTwoPoint(one,two):
     return abs(one[0]-two[0])+abs(one[1]-two[1])
 
-print(solution([1, 3, 4, 5, 8, 2, 1, 4, 5, 9, 5],"right"))
+# print(solution([1, 3, 4, 5, 8, 2, 1, 4, 5, 9, 5],"right"))
 # 상하좌우로만 가능
 # 1,4,7 일때에는 왼손
 # 3,6,9 일때에는 오른손

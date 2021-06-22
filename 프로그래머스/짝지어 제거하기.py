@@ -1,3 +1,17 @@
+def solution2(s):
+    stack = list()
+    for ele in s:
+        if len(stack) == 0:
+            stack.append(ele)
+        elif stack[-1] == ele:
+            stack.pop()
+        else:
+            stack.append(ele)
+    return 1 if len(stack) == 0 else 0
+
+print(solution2("baabaa"))
+
+
 from collections import deque
 
 def solution(s):
