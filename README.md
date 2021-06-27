@@ -21,6 +21,8 @@
 
 - [기능 개발](https://velog.io/@tnddls2ek/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-%EA%B8%B0%EB%8A%A5%EA%B0%9C%EB%B0%9C)
 
+- [전화번호 목록](https://velog.io/@tnddls2ek/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-%EC%A0%84%ED%99%94%EB%B2%88%ED%98%B8-%EB%AA%A9%EB%A1%9D)
+
 ---
 
 # 완전탐색
@@ -32,6 +34,16 @@
 #### Level 2
 
 - [소수 찾기](https://velog.io/@tnddls2ek/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-%EC%86%8C%EC%88%98%EC%B0%BE%EA%B8%B0)
+
+---
+
+# Hash
+
+#### Level 1
+
+#### Level 2
+
+- [전화번호 목록](https://velog.io/@tnddls2ek/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-%EC%A0%84%ED%99%94%EB%B2%88%ED%98%B8-%EB%AA%A9%EB%A1%9D)
 
 ---
 
