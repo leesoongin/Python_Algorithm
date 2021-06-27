@@ -8,6 +8,9 @@
 - [모의고사](https://velog.io/@tnddls2ek/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC)
 
 - [크레인 인형뽑기](https://velog.io/@tnddls2ek/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-%ED%81%AC%EB%A0%88%EC%9D%B8-%EC%9D%B8%ED%98%95%EB%BD%91%EA%B8%B0)
+
+- [신규 아이디 추천](https://velog.io/@tnddls2ek/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-%EC%8B%A0%EA%B7%9C-%EC%95%84%EC%9D%B4%EB%94%94-%EC%B6%94%EC%B2%9C)
+
 ---
 
 # 프로그래머스 - Level 2
@@ -41,3 +44,11 @@
 #### Level 2
 
 - [기능 개발](https://velog.io/@tnddls2ek/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-%EA%B8%B0%EB%8A%A5%EA%B0%9C%EB%B0%9C)
+
+---
+
+# 문자열 다루기
+
+#### Level 1
+
+- [신규 아이디 추천](https://velog.io/@tnddls2ek/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-%EC%8B%A0%EA%B7%9C-%EC%95%84%EC%9D%B4%EB%94%94-%EC%B6%94%EC%B2%9C)
