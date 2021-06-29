@@ -11,6 +11,7 @@ def solution(orders, course):
         for key,value in Counter(t1).items():
             if value == max(Counter(t1).values()) and value > 1:
                 answer.append(''.join(key))
+
     return sorted(answer)
 
 
