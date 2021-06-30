@@ -5,10 +5,11 @@ def solution(m,musicinfos):
         start , end, name, akbo = info.split(",")
         playTime = calTime(start,end)
         akbo = (convert(akbo))
-        akbo = convert(list(map(''.join,[akbo[i % len(akbo)] for i in range(playTime)])))
+        akbo = ''.join((list(map(''.join,[akbo[i % len(akbo)] for i in range(playTime)]))))
         if m in akbo:
             matchList.append([name, len(akbo)])
 
+    print(matchList)
     if len(matchList) == 0:
         return "(None)"
     elif len(matchList) == 1:
